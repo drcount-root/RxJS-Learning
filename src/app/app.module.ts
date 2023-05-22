@@ -3,10 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PromiseComponent } from './promise/promise.component';
+import { AsyncawaitComponent } from './asyncawait/asyncawait.component';
+import { ObservableComponent } from './observable/observable.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PromiseComponent,
+    AsyncawaitComponent,
+    ObservableComponent
   ],
   imports: [
     BrowserModule,
