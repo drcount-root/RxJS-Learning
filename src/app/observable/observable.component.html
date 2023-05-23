@@ -1,1 +1,19 @@
-<p>observable works!</p>
+<h1>Posts</h1>
+
+<!-- Create Post  -->
+<!-- <form> -->
+  <input type="text" #title placeholder="Title" required>
+  <input type="text" #body placeholder="Body" required>
+  <button type="button" (click)="createPost(title.value, body.value)">Create Post</button>
+<!-- </form> -->
+
+<hr>
+
+<!-- Display Post -->
+<div *ngFor="let post of posts">
+  <h2>{{ post.title }}</h2>
+  <p>{{ post.body }}</p>
+  <button (click)="updatePost(post.id, 'Updated Title', 'Updated Body')">Update</button>
+  <button (click)="deletePost(post.id)">Delete</button>
+  <hr>
+</div>
